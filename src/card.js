@@ -1,5 +1,15 @@
 export default class Card{
-    constructor(item, htmlFather){
+    constructor(htmlFather){
+        this.htmlFather = htmlFather;
+    }
+
+    setItem(item){
+        this.item = item;
+        this.buildCard();
+    }
+
+    buildCard(){
+        let item = this.item;
         let card = document.createElement('div');
         card.className = "card";
 
@@ -32,6 +42,6 @@ export default class Card{
         pButtonAdd.appendChild(buttonAdd);
         card.appendChild(pButtonAdd);
 
-        htmlFather.appendChild(card);
+        this.htmlFather.appendChild(card);
     }
 }
