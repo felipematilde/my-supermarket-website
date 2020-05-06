@@ -1,0 +1,9 @@
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-transform-async-to-generator"],
+    "env": {
+        "development": {
+               "plugins": ["transform-es2015-modules-commonjs"]
+        }
+    }
+}
