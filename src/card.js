@@ -1,3 +1,5 @@
+import InputHandler from './inputHandler';
+
 export default class Card{
     constructor(htmlFather){
         this.htmlFather = htmlFather;
@@ -38,6 +40,9 @@ export default class Card{
         let pButtonAdd = document.createElement("p");
         let buttonAdd = document.createElement("button");
         let textButtonAdd = document.createTextNode("Add to Cart");
+        buttonAdd.className = "addToCart";
+        let inputHandler = new InputHandler();
+        buttonAdd.onclick = () => inputHandler.addToCart(item.name);
         buttonAdd.appendChild(textButtonAdd);
         pButtonAdd.appendChild(buttonAdd);
         card.appendChild(pButtonAdd);

@@ -10,21 +10,18 @@
 
 </head>
 <body>
-    <div class="disclaimer" style="font-size: 12px;">
+    <div class="disclaimer" style="font-size: 12px;width: 100%;">
         <p style="text-align:center"><i class="em em-warning" aria-role="presentation" aria-label="WARNING SIGN"></i> This site is just a practice exercise. It's not a real supermarket website and does not intend to be so.</p>
     </div>
     <div class="main-header">
         <input class="search-tool" placeholder="Rice, burguer, potato, soda, banana..."></input>
         <button class="search-tool">Search</button>
-        <img class="main-header-icon" src="../img/shoppingcar.png"></img>
-        <img class="main-header-icon" src="../img/myaccount.png"></img>
+        <img class="main-header-icon" id="cart" src="../img/shoppingcar.png"></img>
+        <img class="main-header-icon" id="account" src="../img/myaccount.png"></img>
     </div>
     <div id="content">
+        <p id="contentMessage"></p>
         <div id="choosen-product">
-            <!-- <p style="padding-left: 10px; font-size: 20px;">Your choosen product: </p> -->
-        </div>
-        <div id="random-products">
-            <p style="padding-left:10px; font-size: 20px">You may want to buy:</p>
         </div>
     </div>
     <div class="main-footer">
